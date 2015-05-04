@@ -73,8 +73,6 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        /*Intent intent = new Intent(MainActivity.this, advanced.class);
-        startActivity(intent);*/
         ds = display.getText().toString();
 
         switch (v.getId()){
@@ -225,7 +223,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             return true;
         }*/
         if (id == R.id.advanced) {
-            return true;
+            Intent intent = new Intent(MainActivity.this, advanced.class);
+            intent.putExtra("string", ds);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);

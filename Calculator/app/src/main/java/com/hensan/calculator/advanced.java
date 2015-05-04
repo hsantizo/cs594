@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 
 public class advanced extends ActionBarActivity implements View.OnClickListener {
-    Button sin, cos, tan, natlog, log, pi, exp, percent, factor, sqrt, pwr, erase, delete;
+    Button sin, cos, tan, natlog, log, pi, exp, percent, factor, sqrt, pwr, clears, deletes;
     TextView display;
     String ds = "";
 
@@ -51,15 +51,15 @@ public class advanced extends ActionBarActivity implements View.OnClickListener 
             factor.setOnClickListener(this);
             sqrt.setOnClickListener(this);
             pwr.setOnClickListener(this);
-            erase.setOnClickListener(this);
-            delete.setOnClickListener(this);
+            clears.setOnClickListener(this);
+            deletes.setOnClickListener(this);
         }
         catch(Exception e){}
     }
 
     @Override
     public void onClick(View v) {
-        if(v.getId() != R.id.clears && v.getId() != R.id.deletes)
+        if(v.getId() != R.id.clear || v.getId() != R.id.delete)
 			ds = ds.concat(((Button) v).getText().toString());
         else
             ;
