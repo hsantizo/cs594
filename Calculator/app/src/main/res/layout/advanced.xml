@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".Advanced">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/display"
+        android:background="@color/display_area"
+        android:textSize="@dimen/displayText"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/display">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clr"
+                android:id="@+id/clear"
+                android:textSize="@dimen/delText"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Del"
+                android:id="@+id/delete"
+                android:textSize="@dimen/delText"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.25"
+        android:layout_below="@id/delete">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:id="@+id/sin"
+                android:text="sin"
+                android:textAllCaps="false"
+                android:textSize="@dimen/buttonText"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:id="@+id/cos"
+                android:text="cos"
+                android:textAllCaps="false"
+                android:textSize="@dimen/buttonText"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:id="@+id/tan"
+                android:text="tan"
+                android:textAllCaps="false"
+                android:textSize="@dimen/buttonText"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.25">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:id="@+id/ln"
+                android:text="ln"
+                android:textAllCaps="false"
+                android:textSize="@dimen/buttonText"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:id="@+id/log"
+                android:text="log"
+                android:textAllCaps="false"
+                android:textSize="@dimen/buttonText"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:id="@+id/pi"
+                android:text="&#960;"
+                android:textAllCaps="false"
+                android:textSize="@dimen/buttonText"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:id="@+id/exp"
+                android:text="e"
+                android:textAllCaps="false"
+                android:textSize="@dimen/buttonText"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.25">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:id="@+id/percent"
+                android:text="&#37;"
+                android:textSize="@dimen/buttonText"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:id="@+id/factor"
+                android:text="!"
+                android:textSize="@dimen/buttonText"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:id="@+id/sqrt"
+                android:text="&#8730;"
+                android:textAllCaps="false"
+                android:textSize="@dimen/buttonText"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:id="@+id/pwr"
+                android:text="&#94;"
+                android:textAllCaps="false"
+                android:textSize="@dimen/buttonText"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

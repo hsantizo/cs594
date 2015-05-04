@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#333</color>
+    <color name="display_area">#eff7ff</color>
+    <color name="opbutton_color">#5cf</color>
+</resources>
